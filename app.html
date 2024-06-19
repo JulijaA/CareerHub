@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CareerHub</title>
+    <!-- CSS style sheets -->
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <img
+            src="assets/img/Screenshot 2023-07-01 171324.png"
+            alt=""
+            height="30px"
+            width="150px"
+          />
+        </div>
+        <ul>
+          <li><a href="app.html">Home</a></li>
+          <li><a href="#browse-jobs">Browse Jobs</a></li>
+          <li><a href="#post-job">Post a Job</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div id="main-content">
+      <!-- Hero section -->
+      <section id="hero">
+        <h1>Hire the best freelancers for your project</h1>
+        <p>
+          Post your project and receive bids from qualified freelancers in
+          minutes.
+        </p>
+        <button class="btn" id="post">Post a Job</button>
+      </section>
+
+      <!-- Browse Jobs section -->
+      <section id="browse-jobs" class="browse-jobs">
+        <div class="categories">
+          <button class="category-btn" data-category="all">All</button>
+          <button class="category-btn" data-category="writers">Writers</button>
+          <button class="category-btn" data-category="engineers">
+            Engineers
+          </button>
+          <button class="category-btn" data-category="ux-ui">
+            UX UI Design
+          </button>
+        </div>
+        <!-- </div> -->
+        <div class="job-card-container">
+          <div
+            class="job-card"
+            data-title="Job 1"
+            data-company-title="Job 1"
+            data-location="Location 1"
+            data-description="Description 1"
+          >
+            <h3>Job 1</h3>
+            <p>Location: Location 1</p>
+            <button class="btn details-btn">Details</button>
+          </div>
+          <div
+            class="job-card"
+            data-title="Job 2"
+            data-company-title="Job 2"
+            data-location="Location 2"
+            data-description="Description 2"
+          >
+            <h3>Job 2</h3>
+            <p>Location: Location 2</p>
+            <button class="btn details-btn">Details</button>
+          </div>
+          <div
+            class="job-card"
+            data-title="Job 3"
+            data-company-title="Job 3"
+            data-location="Location 3"
+            data-description="Description 3"
+          >
+            <h3>Job 3</h3>
+            <p>Location: Location 3</p>
+            <button class="btn details-btn">Details</button>
+          </div>
+        </div>
+      </section>
+      <section id="post-job-form">
+        <div class="container">
+          <div class="container-header">
+            <h2>Post jobs for free</h2>
+            <p>
+              Join over 2,000 other businesses like yours who use
+              <span style="color: #3498db">CareerHub</span> to hire great people
+              fast.
+            </p>
+          </div>
+          <form id="job-form" style="margin: 0 auto; margin-bottom: 30px">
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title" />
+
+            <label for="job-location">Job Location:</label>
+            <input type="text" id="job-location" name="job-location" />
+
+            <label for="job-company">Company:</label>
+            <input type="text" id="job-company" name="job-company" />
+
+            <label for="job-category">Category:</label>
+            <select id="job-category" name="job-category">
+              <option value="all">All</option>
+              <option value="writers">Writers</option>
+              <option value="engineers">Engineers</option>
+              <option value="ux-ui">UX UI Design</option>
+            </select>
+            <label for="job-description">Job Description:</label>
+            <textarea id="job-description" name="job-description"></textarea>
+            <button type="submit" class="btn postJobButton">Post Job</button>
+          </form>
+        </div>
+        <div class="review-container">
+          <div class="revire-sub-container">
+            <h2>Join 2,000+ Businesses Using CareerHub:</h2>
+            <div class="review-container-header">
+              <img
+                src="assets/img/customer-testimonial-e54f990d74da2777c5186060bb0eee47.png"
+                alt=""
+                width="80px"
+              />
+              <h3 style="margin-left: 10px; margin-top: 25px">
+                Engineer Manager / Cosmic Development Offices Angelina Yong, CEO
+              </h3>
+            </div>
+            <div class="review">
+              <p class="review-paragraph">
+                “We tried every job board out there for months, but couldn’t
+                find qualified candidates. Hiring a recruiter wasn’t an option,
+                as it costs tens of thousands of dollars. But within 3 weeks of
+                using CareerHub, we hired a great front end specialist. Thank
+                you!”
+              </p>
+            </div>
+          </div>
+          <div class="revire-sub-container" style="margin-top: 30px">
+            <div class="review-container-header">
+              <h3 style="margin-right: 10px; margin-top: 25px">
+                Manager / Seavus Offices Rene Zowie, CEO
+              </h3>
+              <img
+                src="assets/img/customer-testimonial-e54f990d74da2777c5186060bb0eee47.png"
+                alt=""
+                width="80px"
+              />
+            </div>
+            <div class="review">
+              <p class="review-paragraph">
+                "We explored numerous job boards for months, but struggled to
+                discover suitable candidates. Employing a recruiter was
+                financially unfeasible, given the high costs involved. However,
+                after just 3 weeks of leveraging CareerHub, we successfully
+                recruited an exceptional front-end specialist. Our heartfelt
+                gratitude!"
+              </p>
+            </div>
+          </div>
+          <div class="revire-sub-container" style="margin-top: 30px">
+            <div class="review-container-header">
+              <img
+                src="assets/img/customer-testimonial-e54f990d74da2777c5186060bb0eee47.png"
+                alt=""
+                width="80px"
+              />
+              <h3 style="margin-left: 10px; margin-top: 25px">
+                Data Manager / Netcetera Offices Julia Reno, CEO
+              </h3>
+            </div>
+            <div class="review">
+              <p class="review-paragraph">
+                "After tirelessly experimenting with various job boards for
+                months, we faced the challenge of finding qualified candidates.
+                Unfortunately, hiring a recruiter was not a viable option due to
+                the exorbitant costs involved. Our deepest appreciation goes out
+                to CareerHub for making it possible!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="job-details" class="modal hidden" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-job-title"></h2>
+          <svg
+            width="25px"
+            height="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="close-modal"
+            id="close-modal"
+          >
+            <g id="Edit / Close_Circle">
+              <path
+                id="Vector"
+                d="M9 9L11.9999 11.9999M11.9999 11.9999L14.9999 14.9999M11.9999 11.9999L9 14.9999M11.9999 11.9999L14.9999 9M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+        </div>
+        <p><strong>Company:</strong> <span id="modal-job-company"></span></p>
+        <p><strong>Location:</strong> <span id="modal-job-location"></span></p>
+        <p>
+          <strong>Description:</strong> <span id="modal-job-description"></span>
+        </p>
+        <label for="cv-file"><strong>Attach CV:</strong></label
+        ><br />
+        <input
+          type="file"
+          id="cv-file"
+          name="cv-file"
+          accept=".pdf,.doc,.docx"
+          style="margin-top: 10px"
+        />
+        <span id="remove-cv" class="remove-icon">&times;</span>
+        <span id="cv-error-message" class="error-message" style="display: none">
+          Please select a CV file.
+        </span>
+        <br />
+        <button
+          id="apply-btn"
+          class="btn"
+          type="submit"
+          style="margin-top: 10px"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+    <div id="success-modal" class="modal hidden" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Application Submitted Successfully</h2>
+          <svg
+            width="25px"
+            height="25px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="close-modal"
+            id="close-success-modal"
+          >
+            <g id="Edit / Close_Circle">
+              <path
+                id="Vector"
+                d="M9 9L11.9999 11.9999M11.9999 11.9999L14.9999 14.9999M11.9999 11.9999L9 14.9999M11.9999 11.9999L14.9999 9M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </svg>
+        </div>
+        <p>Thank you for applying for the job!</p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>Copyright © 2023 Freelancer Marketplace</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="main.js"></script>
+  </body>
+</html>
